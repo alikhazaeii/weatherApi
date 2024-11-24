@@ -64,7 +64,7 @@ i === null || i === void 0 ? void 0 : i.addEventListener('click', () => {
         alert('enter your name');
     }
     //////////////////////////////}]/////////////////////
-    fetch(`http://api.weatherbit.io/v2.0/current?city=${inpValue}&key=b808b76333fa4609819c1c8eabd99ef6`, {
+    fetch(`https://api.weatherbit.io/v2.0/current?city=${inpValue}&key=b808b76333fa4609819c1c8eabd99ef6`, {
         method: 'GET',
         headers: { 'content-type': 'application/json', },
         mode: 'cors'
