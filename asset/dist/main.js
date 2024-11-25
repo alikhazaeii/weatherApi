@@ -134,6 +134,10 @@ i === null || i === void 0 ? void 0 : i.addEventListener('click', () => {
                     break;
                 case 'Drizzle':
                     video.src = rain;
+                    break;
+                    case 'Heavy rain':
+                        video.src=thunderStorm;
+                        break;
             }
             const section = document.createElement('section');
             section.innerHTML = `
