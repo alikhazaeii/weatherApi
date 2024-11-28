@@ -107,7 +107,7 @@ i === null || i === void 0 ? void 0 : i.addEventListener('click', () => {
             switch (artInput.weather.description) {
                 case 'Haze':
                     video.src = scatteredClouds;
-                    img.src="../asset/img/Haze.png"
+                    img.src="./asset/img/Haze.png"
                     break;
                 case 'Few clouds':
                     video.src = fewClouds;
@@ -116,40 +116,40 @@ i === null || i === void 0 ? void 0 : i.addEventListener('click', () => {
                     break;
                 case 'Clear sky':
                     video.src = clearSky;
-                    img.src="../asset/img/clearSky.png";
+                    img.src="./asset/img/clearSky.png";
 
                     break;
                 case 'Scattered clouds':
                     video.src = scatteredClouds;
-                    img.src="../asset/img/Haze.png";
+                    img.src="./asset/img/Haze.png";
                     break;
                 case 'Broken clouds':
                     video.src = brokenClouds;
-                    img.src="asset/img/brokenClouds.png";
+                    img.src="./asset/img/brokenClouds.png";
                     break;
                 case 'Overcast clouds':
                     video.src = brokenClouds;
-                    img.src="/asset/img/brokenClouds.png";
+                    img.src="./asset/img/brokenClouds.png";
                     break;
                 case 'Fog':
                     video.src = mist;
-                    img.src="/asset/img/mist.png";
+                    img.src="./asset/img/mist.png";
                     break;
                 case 'Mix snow/rain':
                     video.src = snow;
-                    img.src="/asset/img/snow.png";
+                    img.src="./asset/img/snow.png";
                     break;
                 case 'Light rain':
                     video.src = showerRain;
-                    img.src="/asset/img/showerRain.png";
+                    img.src="./asset/img/showerRain.png";
                     break;
                 case 'Drizzle':
                     video.src = rain;
-                    img.src="/asset/img/rain.png";
+                    img.src="./asset/img/rain.png";
                     break;
                     case 'Heavy rain':
                         video.src=thunderStorm;
-                        img.src=/asset/img/thunderStorm.png;
+                        img.src=./asset/img/thunderStorm.png;
                         break;
             }
             const section = document.createElement('section');
