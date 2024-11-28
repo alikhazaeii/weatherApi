@@ -151,6 +151,10 @@ i === null || i === void 0 ? void 0 : i.addEventListener('click', () => {
                         video.src=thunderStorm;
                         img.src="./asset/img/thunderStorm.png";
                         break;
+                case 'Light snow':
+                        video.src=snow;
+                        img.src="./asset/img/snow.png"
+                        break;
             }
             const section = document.createElement('section');
             section.innerHTML = `
