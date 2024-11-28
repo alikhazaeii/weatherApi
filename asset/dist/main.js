@@ -107,25 +107,25 @@ i === null || i === void 0 ? void 0 : i.addEventListener('click', () => {
             switch (artInput.weather.description) {
                 case 'Haze':
                     video.src = scatteredClouds;
-                    img.src="/asset/img/Haze.png"
+                    img.src="../asset/img/Haze.png"
                     break;
                 case 'Few clouds':
                     video.src = fewClouds;
-                    img.src="/asset/img/fewClouds.png";
+                    img.src="./asset/img/fewClouds.png";
 
                     break;
                 case 'Clear sky':
                     video.src = clearSky;
-                    img.src="/asset/img/clearSky.png";
+                    img.src="../asset/img/clearSky.png";
 
                     break;
                 case 'Scattered clouds':
                     video.src = scatteredClouds;
-                    img.src="/asset/img/Haze.png";
+                    img.src="../asset/img/Haze.png";
                     break;
                 case 'Broken clouds':
                     video.src = brokenClouds;
-                    img.src="/asset/img/brokenClouds.png";
+                    img.src="asset/img/brokenClouds.png";
                     break;
                 case 'Overcast clouds':
                     video.src = brokenClouds;
