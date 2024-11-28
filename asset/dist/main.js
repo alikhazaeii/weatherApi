@@ -149,7 +149,7 @@ i === null || i === void 0 ? void 0 : i.addEventListener('click', () => {
                     break;
                     case 'Heavy rain':
                         video.src=thunderStorm;
-                        img.src=./asset/img/thunderStorm.png;
+                        img.src="./asset/img/thunderStorm.png";
                         break;
             }
             const section = document.createElement('section');
