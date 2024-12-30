@@ -41,18 +41,15 @@ setInterval(() => {
     }
 }, 10);
 const day = new Date().getDate();
-const month = date.getMonth() + 1;
+const month = date.getMonth(); 
 const year = date.getFullYear();
-// console.log(day);
-// console.log(month);
-// console.log(year);
 const monthName = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
     "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-const nameMonth = monthName[month];
+const nameMonth = monthName[month]; 
 ul.children[6].innerHTML = `
-<span>${day}</span>
-<span>${nameMonth}</span>
-<span>${year}</span>`;
+    <span>${day}</span>
+    <span>${nameMonth}</span>
+    <span>${year}</span>`;
 main.appendChild(ul);
 const inp = document.querySelector('ul>div>input');
 // console.log(inp);
@@ -64,7 +61,7 @@ i === null || i === void 0 ? void 0 : i.addEventListener('click', () => {
         alert('enter your name');
     }
     //////////////////////////////}]/////////////////////
-    fetch(`https://api.weatherbit.io/v2.0/current?city=${inpValue}&key=b808b76333fa4609819c1c8eabd99ef6`, {
+    fetch(`https://api.weatherbit.io/v2.0/current?city=${inpValue}&key=c0a612839428424ba9a68255525993de`, {
         method: 'GET',
         headers: { 'content-type': 'application/json', },
         mode: 'cors'
@@ -107,7 +104,7 @@ i === null || i === void 0 ? void 0 : i.addEventListener('click', () => {
             switch (artInput.weather.description) {
                 case 'Haze':
                     video.src = scatteredClouds;
-                    img.src="./asset/img/Haze.png"
+                    img.src="/asset/img/Haze.png"
                     break;
                 case 'Few clouds':
                     video.src = fewClouds;
@@ -151,7 +148,7 @@ i === null || i === void 0 ? void 0 : i.addEventListener('click', () => {
                         video.src=thunderStorm;
                         img.src="./asset/img/thunderStorm.png";
                         break;
-                case 'Light snow':
+                    case 'Light snow':
                         video.src=snow;
                         img.src="./asset/img/snow.png"
                         break;
